@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* .young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+  
+body{
+    background-color: hsl(30, 54%, 90%);
+    /*     font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal; */
+      
+}
+
+main{
+    background-color:  #fff ;/*  hsl(30, 54%, 90%) */
+   width: 800px;
+    margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 20px;   
+   border-radius: 10px;
+}
+
+header img{
+    width: 800px;
+   display: block;
+   margin: auto;
+}
+h3{
+    font-size: 30px;
+    font-family: "Young Serif", serif;
+    font-weight:bold;
+    font-style: normal;
+    text-transform: capitalize;
+    margin-top: 20px;
+
+}
+.recipe-discription{
+    font-size: 16px;
+    
+}
+
+.preparation{
+    background-color:  hsl(330, 100%, 98%);
+    font-size: 16px;
+    padding: 20px;
+     font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 30px;
+
+}
+
+ul li{
+    margin-left: 30px;
+    padding: 10px;
+}
+
+ol li{
+    margin-left: 30px;
+    padding: 10px;
+}
+.preparation h4{
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+    font-family: "Young Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+   
+}
+
+.ingredients{
+    background-color:  #fff;
+    font-size: 16px;
+    padding: 20px;
+    font-family: "Young Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: justify;
+  line-height: 1.5;
+
+}
+.ingredients h4{
+    font-size: 20px;
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.instruction{
+    margin-top: 30px;
+    background-color:  #fff;
+    font-size: 16px;
+    padding: 20px;
+    font-family: "Young Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: justify;
+  line-height: 1.5;
+}
+.instruction h4{
+    font-size: 20px;
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.instruction span{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.nutrition{
+    font-size: 16px;
+    padding: 20px;
+     font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 20px;  
+}
+
+.nutrition h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+
+}
+.nutrition p{
+    
+    margin-bottom: 20px;
+} 
+
+.measurement-part {
+    font-size: 16px;
+  
+    
+    
+}
+.calories-measurement{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  padding-top: 20px;
+}
+.carbs-measurement{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 20px;
+}
+.protein-measurement{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 20px;
+}
+.fat-measurement{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 20px;
+}
+.product-name{
+   margin-left: 20px;
+}
+
+.amount-1{
+    color: hsl(14, 45%, 36%);
+    position: absolute;
+    right: 170px;
+}
+.amount{
+    color: hsl(14, 45%, 36%);
+ position: absolute;
+ right: 205px;
+}
+.amount-0{
+    color: hsl(14, 45%, 36%);
+    position: absolute;
+    right: 210px;
+}
+
+
+
+.carbs-measurement{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+@media (max-width: 375px) {
+    body{
+        width: 100%;
+     
+        flex-wrap: wrap;
+    }
+
+main{
+    width:100% ;
+    display: block;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+header img{
+    width:100%;
+   display: block;
+   margin: auto;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+h3{
+    font-size: 50px;
+    font-family: "Young Serif", serif;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: capitalize;
+    margin-top: 10px;
+    flex-direction: column;
+    flex-wrap:wrap;
+
+}
+.recipe-discription{
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+}
+
+.preparation{
+    background-color:  hsl(330, 100%, 98%);
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+
+}
+
+ul li{
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+}
+
+ol li{
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+}
+.preparation h4{
+    color: hsl(332, 51%, 32%);
+    font-size: 10px;
+    font-family: "Young Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+   
+}
+
+.ingredients{
+    background-color:  #fff;
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+
+}
+.ingredients h4{
+    font-size: 20px;
+    color: hsl(14, 45%, 36%);
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+}
+.instruction{
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+}
+.instruction h4{
+    font-size: 20px;
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.instruction span{
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+}
+
+.nutrition{
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500; 
+}
+
+.nutrition h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: hsl(14, 45%, 36%);
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+
+}
+.nutrition p{
+    
+    margin-bottom: 20px;
+} 
+
+.measurement-part {
+   
+  
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #333;
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    
+}
+.calories-measurement{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  padding-top: 20px;
+}
+.carbs-measurement{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 20px;
+}
+.protein-measurement{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 20px;
+}
+.fat-measurement{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 20px;
+}
+.product-name{
+   margin-left: 20px;
+}
+
+.amount-1{
+    color: hsl(14, 45%, 36%);
+    position: absolute;
+    right: 170px;
+}
+.amount{
+    color: hsl(14, 45%, 36%);
+ position: absolute;
+ right: 205px;
+}
+.amount-0{
+    color: hsl(14, 45%, 36%);
+    position: absolute;
+    right: 210px;
+}
+
+
+
+.carbs-measurement{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+}
+
+
+
+
